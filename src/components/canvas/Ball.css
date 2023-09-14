@@ -1,0 +1,41 @@
+#ball {
+  position: relative;
+  transition: all 200ms ease;
+}
+
+#ball::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 200ms ease;
+  background: linear-gradient(0deg, #F3F3F340, #F3F3F320, transparent);
+}
+
+#ball::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 200ms ease;
+  background: linear-gradient(0deg, #F3F3F360, #F3F3F340, transparent);
+  opacity: 0;
+}
+
+#ball img {
+  z-index: 4;
+}
+
+#ball:hover::before {
+  opacity: 0;
+}
+
+#ball:hover::after {
+  opacity: 1;
+}

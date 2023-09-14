@@ -1,0 +1,32 @@
+.main_loading{
+  position: relative;
+}
+
+.loading{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translate(-50%, 0%);
+  width: 40dvw;
+}
+
+.loading-bar{
+  position: relative;
+  width: 70%;
+  height: 0.5em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.loading-bar-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #edf1f5;
+  border-radius: 0.25em;
+  transition: width 300ms;
+}
